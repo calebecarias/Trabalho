@@ -1,0 +1,199 @@
+:root{
+    --principal:#2c2663;
+    --rosa:#e6007e;
+
+}
+*{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    color: whitesmoke;
+}
+h4{
+    color: #ffffff;
+}
+h6{
+    color: #ffffff;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--principal);
+}
+header img#hero{
+    border-radius: 50%;
+    width: 100%;
+    max-width: 150px;
+}
+header section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+}
+nav ul li{
+    background-color: var(--rosa);
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+main{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+main h1{
+    color: black;
+    margin-top: 20px;
+    text-decoration: underline;
+
+}
+
+main section#formacao{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+img#logo_ifes{
+    max-width: 150px;
+    width: 100%;
+}
+main section#ifes{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+img#logo_ufes{
+    max-width: 150px;
+    width: 100%;
+}
+main section#ufes{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+img#logo_uvv{
+    max-width: 150px;
+    width: 100%;
+}
+main section#uvv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+main section *{
+    margin: 5px;
+}
+main section#formacao img{
+    max-height: 250px;
+    max-width: 250px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    
+}
+main section#formacao p{
+    max-width: 250px;
+    width: 100%;
+}
+main section#habilidades{
+    margin: 2%;
+    width: 100%;
+}
+section#habilidades ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    
+}
+
+section#habilidades ul li{
+    text-decoration: none;
+    
+}
+section#habilidades ul li::before {
+    content: "- ";
+}
+section#experiencias{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+footer{
+    bottom: 0px;
+    background-color: var(--rosa);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+footer nav a img{
+    width: 25px;
+    border-radius: 50%;
+
+}
+@media screen and (max-width: 480px) {
+    main section#formacao img{
+        width: 75px;
+    }
+    main  section#formacao p{
+        width: 75px;
+    }
+    p{
+        font-size: 10px;
+    }
+    h1#hero{
+        color: white;
+        font-size: 20px;
+    }
+    
+    h4#hero{
+        color: white;
+        font-size: 8px;
+    }
+    section#habilidades ul li{
+        font-size: 8px;
+    }
+    h1#titulo{
+        font-size: 20px;
+    }
+    nav ul li{
+        font-size: 10px;
+    }
+}
+
